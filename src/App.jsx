@@ -53,7 +53,7 @@ function App() {
         </div>
         {
           isLoading && (
-            <Oval size={20}/>
+            <Oval size={20} />
           )
         }
 
@@ -61,7 +61,10 @@ function App() {
 
         {submitted && weatherData && (
           <>
-            <img src={`https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`} alt={weatherData.description} className='weather-img' />
+            <div className="main">
+              <img src={`https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`} alt={weatherData.description} className='weather-img' />
+              <p> {weatherData.description} </p>
+            </div>
             <p className='temp'>{weatherData.temperature}℃</p>
             <p className="location">{weatherData.location}</p>
             <div className="weather-data">
