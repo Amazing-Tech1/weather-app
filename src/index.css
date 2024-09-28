@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+#root {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.weather-app {
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.418);
+  background-color: slateblue;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  gap: 10px;
+  width: 90%;
+}
+
+.search-box input {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 15px;
+}
+
+.weather-img {
+  width: 250px;
+  height: 200px;
+  margin: 30px 0;
+}
+
+.temp {
+  font-size: 50px;
+  line-height: 0.5;
+}
+
+.location {
+  font-size: 80px;
+}
+
+.weather-data {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.col img {
+  width: 40px;
+}
+
+.col p {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.col span {
+  font-size: 15px;
+}
+
+@media (max-width:400px) {
+  .weather-app {
+    border-radius: 0px;
+    height: 100vh;
+  }
+
+  .weather-img {
+    margin: 20px 0;
+  }
+
+  .temp {
+    font-size: 35px;
+    line-height: 0.1;
+  }
+
+  .location {
+    font-size: 60px;
+  }
+
+  .weather-data {
+    margin: 25px 0;
+  }
+
+  .col {
+    gap: 5px;
+  }
+
+  .col img {
+    width: 30px;
+  }
+
+  .col p {
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+
+}
