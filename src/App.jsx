@@ -27,8 +27,10 @@ function App() {
         icon: data.weather[0].icon,
         description: data.weather[0].description
       })
+
     } catch (error) {
       setError("city not found")
+      setWeatherData()
     } finally { setIsLoading(false) }
   }
   function handleOnKeyDown(e) {
@@ -42,6 +44,7 @@ function App() {
     if (e.target.value === "") {
       setWeatherData()
       setSubmitted(false)
+      setError(null)
     }
   }
 
