@@ -129,6 +129,7 @@ body {
 
   .location {
     font-size: 40px;
+    padding: 5% 15%;
   }
 
   .weather-data {

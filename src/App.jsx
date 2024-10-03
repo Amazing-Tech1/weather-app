@@ -66,7 +66,7 @@ function App() {
           <>
             <div className="main">
               <img src={`https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`} alt={weatherData.description} className='weather-img' />
-              <p> {weatherData.description} </p>
+              <p> {weatherData.description.toUpperCase()} </p>
             </div>
             <p className='temp'>{weatherData.temperature}℃</p>
             <p className="location">{weatherData.location}</p>
